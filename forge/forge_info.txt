@@ -1,0 +1,14 @@
+- inicializa o forge
+forge 
+
+- cria um novo projeto web com o nome definido
+project-new --named [nome_do_projeto] 
+
+- adiciona o JSF ao projeto
+faces-setup --facesVersion 2.2 (dentro da pasta do projeto) 
+
+- adiciona o CDI ao projeto
+cdi-setup --cdiVersion 1.1 (dentro da pasta do projeto) 
+
+* O Forge utiliza a instalação pre-existente do Maven para fazer os downloads
+* O proxy deve ser configurado no Maven e nao no Forge

@@ -1,0 +1,5 @@
+- Enviando para o S3
+Precisa definir a regiao (.withRegion("<region>") na criacao do client.
+
+:java.lang.NoSuchMethodError: com.fasterxml.jackson.databind.ObjectMapper.enable
+Use a dependencia aws-java-sdk-bundle, esse erro ocorre por conflito ou falta de libs

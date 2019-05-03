@@ -1,0 +1,12 @@
+
+* Quando houver mudança no relacionamento entre Tabelas (OneToMany, ManyToMany), será preciso recriar as tabelas...
+
+- Instalacao do OJDBC no Maven
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.x.x.x -Dpackaging=jar -Dfile=ojdbc14.jar -DgeneratePom=true
+* A dependencia é instalada no repositório do maven definido no PATH.
+
+:Failed to process phase FIRST_MODULE_USE
+No persistence.xml, deixe a tag <provide> inline
+
+:Correcao do erro com Datas vazias no banco ('0000-00-00 00:00:00' can not be represented as java.sql.Timestamp)
+Inclua na url do datasource (tag <connection-url>), o sufixo: ?zeroDateTimeBehavior=convertToNull

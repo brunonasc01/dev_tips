@@ -1,0 +1,2 @@
+:resolution will not be reattempted until the update interval of central has elapsed
+Eh devido à conlfito de dependencias do maven, crie um repositorio limpo da dependencia com problema

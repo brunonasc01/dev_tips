@@ -1,0 +1,20 @@
+- Ver a URL do remote
+git remote -v
+
+- Definir um repositorio remoto (centralizador)
+git init --bare <nome_do_repositorio>.git?(opcional)
+
+- Adicionar um projeto untracked no git
+git init (cria as pastas do git
+git add . (rastreia todos os arquivos)
+git commit -m "<mensagem>"
+
+- Mandar o commit para o servidor (apos adicionar o remote)
+git push <nome do remote> master
+
+* Usar um repositorio remoto --bare(sem working tree), impede commits diretos,
+novos arquivos serao enviados apenas pelo push. Isso permite que o comportamento seja
+semelhante a um svc centralizado (como svn)
+
+* O caminho do remote no windows devera ser o caminho da pasta no formato unix
+git remote add <nome> /c/<caminho...>/<repositorio>.git?(opcional)
