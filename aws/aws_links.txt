@@ -1,0 +1,8 @@
+- Amazon SDK
+https://aws.amazon.com/pt/sdk-for-java/
+
+- Managing Access Keys for IAM Users - AWS Identity and Access Management
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
+
+- Working with AWS Credentials - AWS SDK for Java
+https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html

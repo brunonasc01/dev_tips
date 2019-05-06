@@ -1,0 +1,8 @@
+- Compilar .less
+lessc <nome>.less
+
+- Compilar para arquivo
+lessc <nome>.less <nome>.css
+
+- Compilar para arquivo minified
+lessc --clean-css <nome>.less <nome>.min.css

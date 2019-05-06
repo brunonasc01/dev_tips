@@ -1,0 +1,2 @@
+- The BalusC Code JSF 2.2 tutorial with Eclipse and WildFly
+http://balusc.omnifaces.org/2014/10/jsf-22-tutorial-with-eclipse-and-wildfly.html

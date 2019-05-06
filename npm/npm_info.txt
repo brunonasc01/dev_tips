@@ -1,0 +1,24 @@
+- Configurar Proxy
+npm config set proxy <http url>
+npm config set https-proxy <https url>
+
+- Versao NPM
+npm -v
+
+- Verificar configuracao
+npm config get <nome_parametro>
+
+- Atualizar npm
+npm install npm@latest -g
+
+- Verifcar pacotes instalados (pelo usuario)
+npm list -g --depth=0
+
+- Baixar dependencias do projeto
+npm i 
+
+- Atualizar pacotes
+npm update
+
+- Verificar pacotes desatualizados
+npm outdated

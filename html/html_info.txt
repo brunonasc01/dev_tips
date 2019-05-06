@@ -1,0 +1,2 @@
+
+* Para permitir caracteres especiais, precisa incluir dentro da tag <head>, <meta charset="UTF-8">

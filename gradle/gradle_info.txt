@@ -1,0 +1,8 @@
+- compila o projeto
+gradle build
+
+- roda o projeto
+gradle run
+
+* Para garantir o carregamento das entidades, sem precisar declara-las no persistence.xml, inclua essa linha no arquivo build.gradle:
+sourceSets.main.output.resourcesDir = sourceSets.main.output.classesDir

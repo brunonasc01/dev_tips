@@ -1,0 +1,8 @@
+- Instalar angular/cli
+npm instal -g @angular/cli
+
+- Subir o servidor
+ng serve
+
+:Correcao do Bug no vendors.js, iterFn (Internet Explorer)
+No arquivo polyfills.ts, descomente (ctrl+;) todos os imports para IE9~11

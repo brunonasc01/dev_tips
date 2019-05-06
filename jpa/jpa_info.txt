@@ -10,3 +10,10 @@ No persistence.xml, deixe a tag <provide> inline
 
 :Correcao do erro com Datas vazias no banco ('0000-00-00 00:00:00' can not be represented as java.sql.Timestamp)
 Inclua na url do datasource (tag <connection-url>), o sufixo: ?zeroDateTimeBehavior=convertToNull
+
+* O provider org.hibernate.ejb.HibernatePersistence não existe nas versoes mais recentes do hibernate, utilize o org.hibernate.jpa.HibernatePersistenceProvider
+
+* Impedir que o hibernate tente criar as entidades (tabelas),
+remova a linha <property name="hibernate.hbm2ddl.auto" value="update" /> do persistence.xml
+
+* O createQuery deve usar o nome da entidade e não o nome da tabela...

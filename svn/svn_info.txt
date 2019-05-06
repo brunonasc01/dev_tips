@@ -1,0 +1,14 @@
+- Baixar projeto 
+svn checkout <caminho completo>
+
+- Baixar ultimas atualizacoes
+svn update -r HEAD --force
+
+- Reverter todas as alteracoes
+svn revert --recursive .
+
+- Geracao de log
+svn log --xml -r <revisao_inicial>:HEAD > <nome do log>.xml
+
+- Redirecionamento do repositorio
+svn relocate <caminho completo>
