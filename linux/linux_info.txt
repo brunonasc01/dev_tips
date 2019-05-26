@@ -15,6 +15,13 @@ sudo apt-get install default-jdk
 - Instalar 7-Zip
 sudo apt-get install p7zip-full
 
+- Descompactar .7z
+7za x <zip> -o<caminho destino>
+Com pasta
+
+- Compactar .7z
+7za a <nome>.7z <caminho>
+
 - Remover eclipse antigo
 rm -Rf /opt/eclipse/
 rm -Rf /usr/share/applications/eclipse.desktop
