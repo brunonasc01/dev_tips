@@ -1,0 +1,23 @@
+:Para corrigir o /favicon.ico no request
+Insira o codigo abaixo na criacao do servidor
+    // control for favicon
+    if (request.url == '/favicon.ico') {
+        response.writeHead(200, {'Content-Type': 'image/x-icon'} );
+        response.end();
+        return;
+    }
+
+- Express
+npm	install	-g	express-generator 
+
+- Consign (plugin rotas)
+npm install consign --save
+
+- Controle de sessao
+npm install express-session --save
+
+- Method-Override (reaproveitamento de rota)
+npm install method-override --save
+
+- Socket.io
+npm install socket.io --save

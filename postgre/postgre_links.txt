@@ -1,0 +1,7 @@
+http://zetcode.com/springboot/postgresql/
+
+- Instalar pgAdmin4
+https://wiki.postgresql.org/wiki/Apt
+
+- Criar tabela no pgAdmin
+http://doraprojects.net/blog/?p=3183

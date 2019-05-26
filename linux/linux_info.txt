@@ -1,0 +1,62 @@
+- Mudar a cor de fundo da tela de boot
+/usr/share/plymouth/themes/ubuntu-logo/sudo gedit ubuntu-logo.script
+Mude as linhas abaixo
+Window.SetBackgroundTopColor (0.0, 0.00, 0.0);     # Nice colour on top of the screen fading to
+Window.SetBackgroundBottomColor (0.0, 0.00, 0.0);  # an equally nice colour on the bottom
+Depois, execute no terminal sudo update-initramfs -u
+
+- Mudar a cor de fundo do terminal
+Abra um terminal, va no menu preferências -> perfil -> e altere ^^
+
+- Instalar o JAVA (JDK)
+sudo apt-get update
+sudo apt-get install default-jdk
+
+- Instalar 7-Zip
+sudo apt-get install p7zip-full
+
+- Remover eclipse antigo
+rm -Rf /opt/eclipse/
+rm -Rf /usr/share/applications/eclipse.desktop
+
+- Instalacao eclipse
+Após o download: sudo tar -zxvf <eclipse_compactado> -C /opt/
+
+- Instalar / Desinstalar programas (.deb)
+instalar
+sudo dpkg -i <nome do pacote>.deb
+remover
+sudo apt-get remove <nome do pacote>
+
+- Atualizacao de pacotes (e correcoes...)
+sudo apt-get update
+sudo apt-get upgrade   
+sudo apt-get dist-upgrade
+
+- Matar um processo
+kill <numero pid>
+
+para encontrar o pid do processo:
+ps aux | grep <nome do app/processo>
+
+- Renomear pasta
+mv <nome_antigo> <nome_novo>
+
+- Alterar proprietario do arquivo ou pasta
+sudo chown -R <nome_usuario> <pasta>
+
+- Instalar STS
+sudo tar -xvf spring-tool-suite-3.9.7.RELEASE-e4.10.0-linux-gtk-x86_64.tar.gz
+
+- Instalar Nodejs
+cd ~
+curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+
+- Layout do Teclado (Shift + HOME/END)
+sudo apt-get install gnome-tweak-tool
+execute gnome-tweaks
+Keyboard & Mouse > Additional Layout Options > Miscellaneous > Num Lock on: digits; Shift...
+
+- Instalar NodeJs
+sudo apt-get install -y nodejs

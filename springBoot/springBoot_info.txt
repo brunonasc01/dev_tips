@@ -1,0 +1,33 @@
+:suncertpathbuilderexception
+Altere o service url do initializr para http://start.spring.io
+
+- Cria um projeto pelo cli
+spring init -dweb,jpa 
+
+- Actuator
+Permite monitorar as metricas e a saúde da aplicação em tempo de execução
+
+- Thymeleaf & Templates
+Para as views serem renderizadas corretamente, da pasta templates, é preciso 
+adicionar a dependencia do thymeleaf
+
+- HotCod Swap
+adicione a dependencia spring-boot-devtools
+
+- Form submit
+https://spring.io/guides/gs/handling-form-submission/
+
+- Para renderiza parametros vindo do formulario, usando o thymeleaf
+inclua a taglib
+  <html xmlns:th="http://www.thymeleaf.org">
+
+pegue os parametros usando a tag (dentro do elemento)
+  th:text="${param.<param_name>}" 
+
+O modelAttribute no form foi substituido por
+  th:object="${param}
+
+- Habilitar um repositorio
+Na interface do repositorio, inclua a anotacao @Repository
+Na classe de startup da aplicacao inclua @EnableJpaRepositories(basePackages = {"<pacote do repositorio"})
+https://www.devmedia.com.br/spring-boot-como-criar-um-servidor-rest-com-spring-data/34006

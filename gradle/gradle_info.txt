@@ -6,3 +6,28 @@ gradle run
 
 * Para garantir o carregamento das entidades, sem precisar declara-las no persistence.xml, inclua essa linha no arquivo build.gradle:
 sourceSets.main.output.resourcesDir = sourceSets.main.output.classesDir
+
+- Teste de Integracao
+test-app -integration
+
+:Bypass download do gradle-3.0-bin.zip
+then there will be still problem with the gradle wrapper as it tries to download
+the distribution zip ( gradle-2.9-bin.zip  is referred in my case).
+By downloading the appropriate one manually and placing it to the
+gradle/dists  folder e.g. and changing the configuration file at 
+gradle-wrapper.properties  in order to point to it as follows:
+distributionUrl=../dists/gradle-2.9-bin.zip  it will work.
+
+- configuração proxy
+Na pasta do projeto, inserir as configurações no arquivo gradle.properties
+systemProp.http.proxyHost=<url>
+systemProp.http.proxyPort=<port>
+systemProp.http.proxyUser=<user>
+systemProp.http.proxyPassword=<senha>
+
+systemProp.https.proxyHost=<url>
+systemProp.https.proxyPort=<port>
+systemProp.https.proxyUser=<user>
+systemProp.https.proxyPassword=<senha>
+
+* Quando usar o gradlew, insira o arquivo gradle.properties na raiz do diretorio

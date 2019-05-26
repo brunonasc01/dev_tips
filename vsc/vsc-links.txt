@@ -1,0 +1,6 @@
+- Must Have Extensions
+https://medium.com/frontend-coach/7-must-have-visual-studio-code-extensions-for-angular-af9c476147fd
+
+- Extensoes
+TSLint - https://marketplace.visualstudio.com/items?itemName=eg2.tslint
+Auto Import - https://marketplace.visualstudio.com/items?itemName=steoates.autoimport

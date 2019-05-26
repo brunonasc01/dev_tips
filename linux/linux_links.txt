@@ -1,0 +1,9 @@
+https://help.ubuntu.com/kubuntu/desktopguide/pt_BR/index.html
+
+https://help.ubuntu.com/community/EnvironmentVariables
+
+https://tutorialforlinux.com/2015/10/20/how-to-quickstart-with-jboss-forge-on-command-line-for-ubuntu-15-10-wily-32-64bit-linux/
+
+http://www.edivaldobrito.com.br/eclipse-no-linux/
+
+https://desenvolvo.wordpress.com/2013/08/27/configurando-datasource-no-jboss-wildfly-com-mysql/

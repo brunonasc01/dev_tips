@@ -1,0 +1,5 @@
+- gradle - entity bug workaround
+https://discuss.gradle.org/t/jpa-entity-classes-are-not-discovered-automatically-with-gradle/11339/3
+
+- gradle - jar with dependencies
+https://www.mkyong.com/gradle/gradle-create-a-jar-file-with-dependencies/

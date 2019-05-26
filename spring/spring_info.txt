@@ -1,0 +1,136 @@
+XML
+
+- Os arquivos ficam na pasta src porem, fora do pacote de classes
+
+- ApplicationContext.xml (dentro da pasta src)
+
+- tag bean (com id, class e scope = singleton,prototype)
+ - nós filhos
+  - injectors (constructor-arg, property)
+
+- Arquivo externo (properties, fica na pasta src)
+ - tag context:property-placeholder
+ - conteudo referenciado por ${<propriedade>
+
+ANNOTATION
+
+- No xml fica apenas a referencia ao pacote
+  - context:component-scan
+
+- Na classe, inclui a anotacao @Component
+  - pode definir um id personalizado @Component("<id>") ou usar o nome classe camel case (inicial minuscula)
+  - Quando os 2 caracteres iniciais sam maiusculos, prevalece o nome original
+
+- Injeção no construtor ou setter
+  - anotacao @AutoWired
+  - A anotacao @AutoWired pode ser usada em qualquer método
+
+- Injeção de atributo
+  - anotacao @AutoWired diretamente na variável. Através de reflection, a instância é criada on demand
+
+- Qualifier (identificacao de qual bean utilizar, quando existir multiplas implementacoes da mesma classe)
+  - anotacao @Qualifier("<id do bean>")
+  - na injecao de construtor, o Qualifier deve ser nos argumentos
+
+Bonus - Arquivo externo
+ - Declara no XML
+ - Os valores podem ser carregados nas variaveis, utilizando a anotacao @Value("${<property>}")
+
+- Os escopos são definidos na anotacao @scope("<escopo>")
+
+- Bean Lifecycle
+ -@PostContruct e @PreDestroy
+ -Os metodos nao podem receber argumentos
+
+JAVA CONFIG
+
+- Define uma classe com a anotacao @Configuration
+
+- @ComponentScan("<pacote>")
+- O Bean pode ser definido programaticamente, criando um metodo que retorna o objeto e usando a anotacao Bean
+
+- Para carregar o contexto, é usado a classe AnnotationConfigApplicationContext
+
+MVC
+
+- Controller
+Anotacao @Controller (extende a @Component)
+
+@RequestMapping("<name>")
+- Define um nome qualquer para acesso ao metodo do controller
+- Em controllers, define um mapeamento hierarquico para o controller, permitindo que varios controllers
+possuam metodos com mesmo nome
+  - Chamadas a outros métodos do controller podem ser chamados apenas pelo nome do metodo (caminho relativo)
+
+@RequestParam
+- Atribui a uma variavel, um atributo da request
+
+@ModelAttribute
+- Vincula o formulario a um objeto
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+- Permite usar a tag de form do Spring, habilitando o bind a um modelo
+
+- Quando usar RequestMapping na classe (Parent), as actions dos controlles serão relativas ao path atual.
+
+- o conteudo incluído na pasta static ja fica automaticamente acessível
+
+REST
+
+JSON - Javascript Object Notation
+
+Notacao
+{
+  "<name>" : "<text>",
+  "<name>" : <number>,
+  "<name>" : <boolean>,
+
+  "<name>" : {
+		nested...
+	     },
+
+  "<name>" : [data array],
+}	
+
+
+- Jackson é a biblioteca usada no data binding JSON <-> POJO
+- Ao montar o pojo ele chama os setters/getters
+
+- Para ignorar uma propriedade do json
+inclua na definicao da classe @JsonIgnoreProperties(ignoreUnknown=true)
+
+REST
+Metodos [ POST, GET, PUT, DELETE ]
+
+Request line : Comando HTTP
+Header : metadata
+body : contents
+
+Response message
+line : protocol and status (200, 404)
+Header : metadata
+body : contents
+
+Status Codes
+100-199 - information
+200-299 - sucess
+300-399 - redirect
+400-499 - client error
+500-599 - server error
+
+MIME Content Type (Multipurpose Internet Mail-Extension)
+text/html, application/json, etc
+
+http://teamaqua.github.io/JSONTest/
+
+https://jsonplaceholder.typicode.com/
+
+- Tratamento Global de excecoes REST
+@ControllerAdvice
+
+- Boas Praticas
+O nome do recurso deve ser definimo pelo substantivo comum no projeto
+Utilize os metodos HTTP
+Evite usar acoes no nome dos endpoints (list, get, etc)
+As acoes devem ser definidas pelo metodo HTTP e nao pela assinatura
+

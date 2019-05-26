@@ -1,0 +1,17 @@
+POM - Projet Object Model
+
+Conteudo do POM
+ Project Metadata - Dados sobre o projeto (nome, pacote)
+ Dependencies - Bibliotecas usadas
+ Plugins - Tarefas adicionais
+
+Dependencia
+GAV - Group, Artifact e Version
+
+Repository
+mvnrepository.com
+search.maven.com
+
+Archetype - modelos para projetos
+maven-archetype-quickstart
+maven-archetype-webapp

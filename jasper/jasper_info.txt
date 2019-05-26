@@ -1,0 +1,15 @@
+- Fluxo de Geração
+1. Definicao do template .jrxml
+2. Compilacao .jasper
+3. Consolidacao .jrprint
+4. Exportacao PDF, TXT, etc
+
+- Elemntos do XML
+<title> cabeçalho
+<detail> conteudo
+<pageFooter> rodape
+
+-iReport
+fields  dados vindos do datasource (notacao {$F{nome-do-campo})
+variaveis notacao $V{nome-da-variavel}
+expressoes codigo java

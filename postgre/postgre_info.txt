@@ -1,0 +1,21 @@
+- Instalar Postgre SQL
+sudo apt-get install postgresql postgresql-contrib
+
+- Config Postgre SQL
+acessar usuario do banco: sudo -i -u postgres
+para sair: exit
+
+entrar no prompt do banco: psql ou sudo -u postgres psql (sem mudar usuario)
+sair do prompt \q
+
+- no banco:
+criar database: createdb <nome>
+definir senha: \password postgres
+
+ver versao do postgre: SELECT version();
+
+ver status do serviço: /etc/init.d/postgresql status
+
+- Instalar pgAdmin4
+acessar o pgAdmin4: pgAdmin4 no terminal ou http://127.0.0.1:34077/browser/#
+criar tabela no pgAdmin: http://doraprojects.net/blog/?p=3183

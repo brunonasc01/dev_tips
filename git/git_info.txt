@@ -18,3 +18,10 @@ semelhante a um svc centralizado (como svn)
 
 * O caminho do remote no windows devera ser o caminho da pasta no formato unix
 git remote add <nome> /c/<caminho...>/<repositorio>.git?(opcional)
+
+- Para instalar no Ubuntu
+sudo apt-get install git
+
+Depois, para definir o nome e mail do usuario git
+$ git config --global user.name '<nome>'
+$ git config --global user.email '<email>'

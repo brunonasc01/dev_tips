@@ -1,0 +1,61 @@
+REST (Representational State Transfer)
+- Separação cliente - servidor
+- Escalabilidade
+- Independente de linguagem
+- Facilidade de integracao de sistemas no mercado
+
+Constraints
+- Cliente-Servidor
+- Stateless (nao mantem o estado da requisição e sessão no servidor)
+- Passível de cache
+- interface uniforme (padrão do protocolo de comunicação POST,GET,PUT,DELETE)
+- Sistema em camadas (servidor pode receber novas funções sem impacto no front)
+- (opcional) código sob demanda (fornecimento de novas bibliotecas ao front)
+
+REST - sobre o modelo e características
+RESTful api - sobre api usando modelo REST
+
+HTTP - protocolo requisição - resposta
+request(metodo, uri, versao http, cabecalho e corpo)
+ metodo=post,delete,put,delete
+ uri=path,url
+ versao=1.1 ou 2.0
+ cabecalho=define o tipo de conteudo e formatos aceitos
+ corpo=dados
+
+resposta(versao,status,cabecalho,corpo)
+ versao=1.1
+ status=200,404,500
+ cabecalho=define o tipo de conteudo e formatos aceitos
+ corpo=dados
+
+Status HTTP (200,300,400,500)
+20* = Sucesso
+30* = Redirecionamento
+40* = Erro no cliente
+50* = Erro no servidor
+
+Recurso
+- Qualquer objeto que pode ser representado no sistema
+URI = Uniform Resource Identifier / Substantitvo
+
+exemplo:
+/carros
+/carros/1
+
+* O Recurso deve ser modelado (uri) como um substantivo
+
+Metodos HTTP
+GET = Pegar um recurso
+POST = Criacao de novo recurso
+PUT = Atualizacao de recurso
+DELETE = Remocao de recurso
+
+Versionamento
+A.X.Z
+A = nova versao, pode quebrar codigo na atualizacao
+X = nova funcionalidade
+Z = bug fix
+
+Bibliotecas Angular
+PrimeNG

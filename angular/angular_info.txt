@@ -6,3 +6,6 @@ ng serve
 
 :Correcao do Bug no vendors.js, iterFn (Internet Explorer)
 No arquivo polyfills.ts, descomente (ctrl+;) todos os imports para IE9~11
+
+:Para corrigir o erro do cdk/dropdown no angular
+npm install --save @angular/material @angular/cdk

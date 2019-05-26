@@ -1,0 +1,9 @@
+- Definição
+Separar um sistema em diversos artefatos
+
+
+Ref
+Edson Yanaga
+
+Livro
+Migrating to Microservice Databases: From Relational Monolith to Distributed Data

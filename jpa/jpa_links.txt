@@ -1,0 +1,2 @@
+- Jpa Queries
+http://blog.werneckpaiva.com.br/2012/01/queries-com-a-nova-jpa2-criteria-api/
