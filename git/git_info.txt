@@ -25,3 +25,32 @@ sudo apt-get install git
 Depois, para definir o nome e mail do usuario git
 $ git config --global user.name '<nome>'
 $ git config --global user.email '<email>'
+
+- pull da master/develop
+git checkout <develop>
+git pull
+
+- merge na branch atual
+git checkout <branch>
+git merge <develop>
+
+- push da merged para o bitbucket
+git push
+
+- reverter uma alteracao
+git checkout -- <nome do arquivo com path>
+
+- reverter todas as alteracoes
+ git checkout -- .
+
+ - pegar uma versao especifica do arquivo
+git checkout <id do commit> -- <path do arquivo>
+
+- baixar ref a novas branches no projeto
+git fetch
+
+- mudar o origin da aplicacao
+$ git remote rm origin
+$ git remote add origin <path>.git
+$ git config master.remote origin
+$ git config master.merge refs/heads/master

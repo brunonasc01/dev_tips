@@ -1,0 +1,64 @@
+- Iniciar/Fechar instancia
+hyper-v manager start/shutdown (ou save)
+
+- Ver ip
+sudo ifconfig
+
+- Configuracoes AWS
+aws configure
+default region: us-east-1
+output format: json
+
+- listagem com arquivos ocultos
+ll = ls -la
+
+- visualizar o conteudo de um arquivo
+cat <nome>
+
+- comandos vi
+vi
+visual = v
+copiar = y
+insercao = i
+sair insercao = esc
+sair e salvar = :x
+apagar tudo dG
+
+
+- Jogar servicos ativos para Background
+comando jobs
+bg <1> identificador do job
+
+- parar um job
+ctrl+z
+
+- mandar um job para front
+fg <1> identificador do job
+
+kubectl
+- ver os pods ativos
+kubectl get pods -n <name-space> (dev-alpe)
+
+- ver os logs
+kubectl logs <nome-completo-do-pods> -n <name-space>
+
+- ver os logs em tempo real
+kubectl logs <nome-completo-do-pods> -n <name-space> -f (ctrl+c para parar)
+
+- listar todos os processos (anexados ou nao na console)
+ps ou ps ax
+
+- matar um processo
+kill <pid do processo>
+
+- corrigir a data da VM
+sudo date MMDDHHMM
+
+- Ver os spots ativos
+kubectl get nodes
+
+- Ver o status dos pods
+kubectl get pods -n dev-support
+
+- deletar container (para carregar a versao nova)
+kubectl delete pod -n <name-space> <nome do pod>
