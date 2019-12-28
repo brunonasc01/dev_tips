@@ -4,3 +4,6 @@ https://medium.com/frontend-coach/7-must-have-visual-studio-code-extensions-for-
 - Extensoes
 TSLint - https://marketplace.visualstudio.com/items?itemName=eg2.tslint
 Auto Import - https://marketplace.visualstudio.com/items?itemName=steoates.autoimport
+
+- Guia para configurar o Java 
+https://dzone.com/articles/visual-studio-code-for-java-the-ultimate-guide-201

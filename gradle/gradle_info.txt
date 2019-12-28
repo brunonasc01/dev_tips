@@ -18,8 +18,8 @@ gradle/dists  folder e.g. and changing the configuration file at
 gradle-wrapper.properties  in order to point to it as follows:
 distributionUrl=../dists/gradle-2.9-bin.zip  it will work.
 
-- configuração proxy
-Na pasta do projeto, inserir as configurações no arquivo gradle.properties
+- configuraï¿½ï¿½o proxy
+Na pasta do projeto, inserir as configuraï¿½ï¿½es no arquivo gradle.properties
 systemProp.http.proxyHost=<url>
 systemProp.http.proxyPort=<port>
 systemProp.http.proxyUser=<user>
@@ -31,3 +31,10 @@ systemProp.https.proxyUser=<user>
 systemProp.https.proxyPassword=<senha>
 
 * Quando usar o gradlew, insira o arquivo gradle.properties na raiz do diretorio
+
+- Instalar uma versao especifica no Ubuntu
+Instale o SDKMAN (no bash)
+$ curl -s "https://get.sdkman.io" | bash
+
+Agora rode o comando
+sdk install gradle
