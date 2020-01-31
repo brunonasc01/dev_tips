@@ -18,3 +18,6 @@ grant all privileges on arquivojm.* to 'fullstack'@'localhost';
 
 :conectar banco de dados no JasperSoft Studio
 precisa do driver especifico do banco
+
+- criar usuario
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'user_password';

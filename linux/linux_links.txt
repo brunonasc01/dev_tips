@@ -7,3 +7,5 @@ https://tutorialforlinux.com/2015/10/20/how-to-quickstart-with-jboss-forge-on-co
 http://www.edivaldobrito.com.br/eclipse-no-linux/
 
 https://desenvolvo.wordpress.com/2013/08/27/configurando-datasource-no-jboss-wildfly-com-mysql/
+
+https://medium.com/@antonioszeto/how-to-install-nvidia-driver-on-ubuntu-18-04-7b464bab43e6
