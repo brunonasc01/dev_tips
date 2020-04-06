@@ -1,0 +1,26 @@
+- instalar docker
+1. sincroniza apt-get 
+sudo apt-get update
+
+2. remove instalacoes antigas
+sudo apt-get remove docker docker-engine docker.io
+
+3. instalar
+sudo apt install docker.io
+
+estudo parou na pagina 21, apos a instalacao do docker
+
+- corrigir erro "Got permission denied while trying to connect to the Docker daemon socket"
+execute sudo chmod 666 /var/run/docker.sock
+
+- baixar uma imagem
+docker pull <nome>
+
+- verificar as imagens instaladas
+docker images
+
+- conferir status do servico
+service docker status
+
+- reiniciar o servico
+service docker restart
