@@ -8,8 +8,6 @@ sudo apt-get remove docker docker-engine docker.io
 3. instalar
 sudo apt install docker.io
 
-estudo parou na pagina 21, apos a instalacao do docker
-
 - corrigir erro "Got permission denied while trying to connect to the Docker daemon socket"
 execute sudo chmod 666 /var/run/docker.sock
 
@@ -60,6 +58,9 @@ docker rm <id>
 - Remover containers parados (stopped)
 docker container prune
 
+- Criar uma nova imagem a partir do container
+docker commit <id-do-container> <nome-nova-imagem>
+
 - Renomear uma imagem
 docker tag <id> <novo-nome>
 
@@ -71,4 +72,27 @@ docker logs <id>
 
 - Adicionar o docker ao root (remove a necessidade do sudo)
 sudo groupadd docker
-sudo usermod -aG docker <usuario-super>
+sudo usermod -aG docker $USER
+
+- Criar uma imagem a partir do Dockerfile
+docker build -t <nome-da-imagem>(opcional) <path-do-dockerfile>
+
+- Comandos dockerfile
+FROM <image> define a imagem base
+MAINTAINER <author detail> detalhes do autor da imagem
+COPY <src> <dst> copia um ou mais arquivos do source para o destino (dentro da imagem)
+ADD <src> <dst> semelhante a copy, mas aceita aquivos tar no src
+ENV <key> <value> define uma variavel de ambiente
+ARG <arg> <value> define argumentos que serao aplicados no build da imagem
+USER <id ou name> define o nome do usuario da imagem
+WORKDIR <path> define o diretorio base
+VOLUME <mountpoint> cria um diretorio na imagem
+EXPOSE <port>/<proto> <port...> expoe portas da imagem para acesso externo
+LABEL <key>=<value> adiciona valores ao metadata da imagem
+RUN <comando> executa um comando qualquer no shell
+CMD <comando> semelhante ao RUN, mas e executado na inicializacao da imagem
+ENTRYPOINT <comando> executa um comando tambem
+HEALTHCHECK <opt> CMD <comando> opt define o intervalo da verificacao do status do container e comand e o comando a ser executado
+
+- Conferir o historico (layers) de uma imagem
+docker history <id/name>

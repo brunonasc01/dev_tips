@@ -1,2 +1,5 @@
 - instalacao do docker (atualizado)
 https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
+
+- boas praticas na escrita do Dockerfile
+https://docs.docker.com/articles/dockerfile_best-practices/
