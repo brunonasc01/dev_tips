@@ -14,7 +14,10 @@ estudo parou na pagina 21, apos a instalacao do docker
 execute sudo chmod 666 /var/run/docker.sock
 
 - baixar uma imagem
-docker pull <nome>
+docker pull <nome> (latest) ou docker pull <nome>:<versao> (versao especifica)
+
+- registrar uma imagem no Docker Registry
+docker push <nome>
 
 - verificar as imagens instaladas
 docker images
@@ -24,3 +27,48 @@ service docker status
 
 - reiniciar o servico
 service docker restart
+
+- Docker image e como uma classe e Docker container é como um objeto
+
+- rodar uma imagem no modo interativo
+docker run -i -t <imagem> <terminal>
+
+- Sair do mod interativo
+Ctrl+P Ctrl+Q
+
+- Listar os containers em execucao
+docker ps (-a mostra os parados)
+
+- Entrar no container (interativo)
+docker attach <nome ou id do container>
+
+- Parar um container
+docker stop <id>
+
+- Iniciar um container
+docker start <id>
+
+- Reiniciar um container
+docker restart <id>
+
+- Pausar um container
+docker pause/unpause <id>
+
+- Remover um container (liberar memoria)
+docker rm <id>
+
+- Remover containers parados (stopped)
+docker container prune
+
+- Renomear uma imagem
+docker tag <id> <novo-nome>
+
+- Rodar um container no modo daemon
+docker run -d <imagem>
+
+- Ver os logs de um container 
+docker logs <id>
+
+- Adicionar o docker ao root (remove a necessidade do sudo)
+sudo groupadd docker
+sudo usermod -aG docker <usuario-super>
