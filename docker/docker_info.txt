@@ -55,6 +55,9 @@ docker pause/unpause <id>
 - Remover um container (liberar memoria)
 docker rm <id>
 
+- Remover uma imagem
+docker rmi <nome> (-f para remover imagens relacionadas)
+
 - Remover containers parados (stopped)
 docker container prune
 
@@ -75,7 +78,7 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 - Criar uma imagem a partir do Dockerfile
-docker build -t <nome-da-imagem>(opcional) <path-do-dockerfile>
+docker build -t <nome-da-imagem>(opcional) <path-do-dockerfile> (ou -f <nome-docker-file .) -P (para ativar o binding quando definido EXPOSE no Dockerfile
 
 - Comandos dockerfile
 FROM <image> define a imagem base
@@ -96,3 +99,47 @@ HEALTHCHECK <opt> CMD <comando> opt define o intervalo da verificacao do status 
 
 - Conferir o historico (layers) de uma imagem
 docker history <id/name>
+
+- Fazer login no dockerHub
+docker login
+
+- Fazer push de um container no docker_hub
+docker push <nome da imagem>
+
+- Criar um repositorio (Registry) local
+sudo docker run -d -p 5000:5000 --restart=always --name registry registry:2
+
+ - Consultar o status do registry (health check)
+curl -i http://localhost:5000/v2/
+
+- Ver o conteudo do registry
+curl -i http://localhost:5000/v2/_catalog
+
+- Colocar uma imagems no registry
+docker tag <image-name> localhost:5000/<image-name>
+docker push localhost:5000/<image-name>
+
+- Lista as networks definidas no docker
+docker network ls
+
+- Verifica a configuracao de um network
+docker network inspect <network>
+
+- Definir qual network o container ira utilizar
+parametro --net=(bridge[padrao]|host|none)
+
+- Descobrir o ip de um container
+docker inspect --format='{{.NetworkSettings.IPAddress}}' <hash-do-container>
+
+- Expor uma porta do container
+docker run -d -p <porta-exposta>:<porta-do-container> <imagem>
+docker run -d -p <ip-determinado>:<porta-exposta>:<porta-do-container> <imagem>
+
+- Verifica qual o port binding do container
+docker port <id-container> 80
+
+- Expor uma mesma porta em diferentes containers
+docker run -d -p <porta-do-container> <imagem> (quantas vezes precisar)
+docker run -d -p <porta-exposta>::<porta-do-container> <imagem> (com porta exposta arbitraria)
+
+
