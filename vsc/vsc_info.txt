@@ -5,3 +5,39 @@
 4. Em user Settings, adicione:
   "git.enabled": true,
   "git.path": "<path to git.exe>"
+
+Ocultar Barra Explorer
+ctrl + B
+
+Procurar arquivo
+ctrl + P
+
+Limpar Cache de dependencias (para corrigir o autocomplete)
+ctrl + Shift + P -> Clean Java Language Server Workspace
+
+Habilitar Debug
+Inclua no comeco do build.gradle:
+tasks.withType(JavaExec) {
+    jvmArgs '-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=localhost:41827'
+}
+
+-Na perspectiva de Debug
+Crie uma nova Configuracao
+Escolha Java: Attach
+  Altere a port para a porta definida na task do build.gradle
+
+Depois que iniciar a aplicacao, de play no debug
+
+abrir arquivo em nova janela: ctrl+enter ou F12
+para fixar um arquivo (tirar o itálico), duplo clique no título ou ctrl+k, enter
+estudar serverless
+
+- Para alternar o TAB entre tabular e muda o foco
+Ctrl+M (aparece notificacao na barra de status
+
+- Para abrir um recurso (igual ao ctrl+shift+r do eclipse)
+Ctrl+P
+
+- Para alternar entre arquivos abertos 
+ALT+Setas direcionais
+
