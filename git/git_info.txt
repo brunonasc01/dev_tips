@@ -54,3 +54,9 @@ $ git remote rm origin
 $ git remote add origin <path>.git
 $ git config master.remote origin
 $ git config master.merge refs/heads/master
+
+- remover alteracoes da stage
+git reset -- <nome do arquivo ou extensao>
+
+- checkout de uma tag
+git checkout tags/<nome-da-tag>

@@ -1,0 +1,11 @@
+- iniciar a console do Elixir
+iex -S mix
+
+- obter o resultado de uma linha (no mix)
+v(<numero-da-linha>)
+
+- criar novo projeto
+mix new <nome-do-projeto>
+
+- cria novo modulo
+mix new <path-pasta> --app <nome-modulo>

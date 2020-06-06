@@ -1,0 +1,102 @@
+- Iniciar/Fechar instancia
+hyper-v manager start/shutdown (ou save)
+
+- Ver ip
+sudo ifconfig
+
+- Configuracoes AWS
+aws configure
+default region: us-east-1
+output format: json
+
+ll = ls -la
+
+ver arquivo = cat <nome>
+
+vi
+visual = v
+copiar = y
+insercao = i
+sair insercao = esc
+sair e salvar = :x
+apagar tudo dG
+
+- Jogar servicos ativos para Background
+comando jobs
+bg <1> identificador do job
+
+- parar um job
+ctrl+z
+
+- mandar um job para front
+fg <1> identificador do job
+
+kubectl
+- ver os pods ativos
+kubectl get pods -n <name-space> (dev-method)
+
+- ver os logs
+kubectl logs <nome-completo-do-pods> -n <name-space>
+
+- ver os logs em tempo real
+kubectl logs <nome-completo-do-pods> -n <name-space> -f (ctrl+c para parar)
+
+- listar todos os processos (anexados ou nao na console)
+ps ou ps ax
+
+- matar um processo
+kill <pid do processo>
+
+- corrigir a data da VM
+sudo date MMDDHHMM
+
+- Ver os spots ativos
+kubectl get nodes
+
+- Ver o status dos pods
+kubectl get pods -n dev-support
+
+- deletar container (para carregar a versao nova)
+kubectl delete pod -n <name-space> <nome do pod>
+
+- listar configuracao dos pods
+kubectl get configmap -n <name-space>
+
+- pegar configuracao de um pod
+kubectl get configmap -n <name-space> <nome do pod-config> -o yaml
+
+- alterar a configuracao de uma aplicacao (precisa reiniciar o pod)
+kubectl edit cm -n <name-space> <nome do pod>
+
+- editar as configuracoes de deploy
+kubectl edit deployment -n <name-space> <nome da app>
+
+- port forward
+kubectl port-forward -n dev-itlab pod/<nome_do_pod> <porta-exposta>:<porta-real>
+PuTTY Tunnels: Source port:<porta-local>, Destination:<port-forwarded> 
+
+- acessar o bash do pod
+kubectl exec -it <nome do pod> -n <name space> sh
+
+- desligar um pod
+kubectl scale -n <name-space> deployment/<nome-da-aplicacao> --replicas 0
+p/ voltar
+kubectl scale -n <name-space> deployment/<nome-da-aplicacao> --replicas 1
+
+- Obter a url de uma fila
+AWS_PROFILE=method aws sqs get-queue-url --queue-name devtrava-error-monitor
+
+- Receber uma mensagem
+AWS_PROFILE=method aws sqs receive-message --queue-url <path-fila> --attribute-names All --message-attribute-names All --max-number-of-messages 10
+
+- Ver os atributos de uma msg
+AWS_PROFILE=method aws sqs get-queue-attributes --queue-url <path-fila> --attribute-names All
+
+- Limpar a fila
+AWS_PROFILE=method aws sqs purge-queue --queue-url <path-fila>
+
+- Ver o numero de mensagens na fila
+aws sqs get-queue-attributes ApproximateNumberOfMessages --queue-url arn:aws:sqs:us-east-1:041601564876:itlab-sisap-customer-pos-propagation-test
+
+- Definir o timezone no inicio da aplicacao (Eclipse)
+-Duser.timezone=Brazil/East

@@ -7,17 +7,70 @@ Insira o codigo abaixo na criacao do servidor
         return;
     }
 
+- Definicoes
+node - a javascript runtime (permite rodar javascript no servidor)
+V8 engine - compila o javascript para o Código de Máquina
+
+- No node vc escreve seu servidor
+REPL (node no terminal) - Read Evalute Print(Result) Loop(Wait for input)
+
+- Criando um servidor node
+
+- Modulos Core
+http - monta um servidor e manda requests
+https - monta um servidor SSL
+fs -
+path - caminhos
+os - operation system functions
+
+- npm init
+define um package.json padrao para o projeto
+
+- npm install
+instala uma biblioteca
+npm install -g <pacote> instala globalmente
+npm install <pacote> --save instala para producao
+npm install <pacote> --save-dev instala no desenvolvimento
+- npm install nodemon
+instala a bilioteca de restart automatico (o comando start do package.json deve ser substituido por nodemon <aplicacao>.json
+
+- executar debug
+Run > Start Debugging (F5)
+
+- criar uma build de config personalizada
+Run > add configuration...
+Possíveis opções:
+  "restart": true,
+  "runtimeExecutable": "nodemon",
+  "console": "integratedTerminal"
+
 - Express
-npm	install	-g	express-generator 
+Framework com diversas funcoes para acelerar o desenvolvimento node
 
-- Consign (plugin rotas)
-npm install consign --save
+- Plugin para parsear o Body na request
+npm install --save body-parser
 
-- Controle de sessao
-npm install express-session --save
+- Criar Rotas
+const router = express.Router();
+O router substitui o app.use()
 
-- Method-Override (reaproveitamento de rota)
-npm install method-override --save
+- Configurar caminhos
+const path = require('path');
 
-- Socket.io
-npm install socket.io --save
+- fornecer arquivos estaticos
+app.use(express.static(path.join(__dirname,'<pasta>')));
+
+- template engines (com npm pode instalar multiplos pacotes)
+npm i --save ejs pug express-handlebars
+
+- definir variaveis globais (com express)
+app.set(<chave>,<valor>)
+app.get<chave>)
+
+- definir um template engine
+app.set('view engine', <engine>);
+
+- definir o template handlebars
+const expressHbs = require('express-handlebars');
+app.engine('hbs', expressHbs());
+app.set('view engine', 'hbs');
