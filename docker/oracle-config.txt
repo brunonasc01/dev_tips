@@ -1,0 +1,13 @@
+oracle 11g para linux 3 zips
+
+database orcl
+porta localhost
+sys
+
+- a versao do oracle precisar ser compativel com x86
+
+- O parametro <folder> do comando abaixo deve se referir a pasta onde está a pasta do Oracle
+docker run --privileged --name oracle11g -p 1521:1521 -v <folder>:/install jaspeen/oracle-11g
+
+- Os drivers para conexao pelo dBeaver devem ser baixados desse site
+https://www.oracle.com/database/technologies/jdbc-ucp-122-downloads.html

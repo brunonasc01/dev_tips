@@ -1,4 +1,4 @@
-:suncertpathbuilderexception
+﻿:suncertpathbuilderexception
 Altere o service url do initializr para http://start.spring.io
 
 - Cria um projeto pelo cli
@@ -31,3 +31,6 @@ O modelAttribute no form foi substituido por
 Na interface do repositorio, inclua a anotacao @Repository
 Na classe de startup da aplicacao inclua @EnableJpaRepositories(basePackages = {"<pacote do repositorio"})
 https://www.devmedia.com.br/spring-boot-como-criar-um-servidor-rest-com-spring-data/34006
+
+- Resolver erro “Plugin execution not covered by lifecycle configuration” for Spring Data Maven Builds
+Install m2e eclise plugin (use quick fix)
