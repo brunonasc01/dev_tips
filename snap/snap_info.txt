@@ -1,0 +1,5 @@
+- listar instalados
+snap list
+
+- remover instalado
+sudo snap remove <package>

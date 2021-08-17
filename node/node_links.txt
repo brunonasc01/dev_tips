@@ -11,3 +11,6 @@ Blocking and Non-Blocking Code: https://nodejs.org/en/docs/guides/dont-block-the
 
 - Debugging
 https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+
+- Linux install
+https://github.com/nodesource/distributions/blob/master/README.md

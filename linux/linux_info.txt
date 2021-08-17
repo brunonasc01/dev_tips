@@ -67,3 +67,7 @@ Keyboard & Mouse > Additional Layout Options > Miscellaneous > Num Lock on: digi
 
 - Instalar NodeJs
 sudo apt-get install -y nodejs
+
+- Insalar o chrome pelo dpkg 
+sudo dpkg -i <path>/google-chrome-stable_current_amd64.deb
+sudo apt-get -f install
