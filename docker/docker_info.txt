@@ -22,6 +22,9 @@ docker push <nome>
 - verificar as imagens instaladas
 docker images
 
+- acessar o shell do container 
+docker exec -it <container-id> sh
+
 - conferir status do servico
 service docker status
 

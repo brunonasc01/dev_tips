@@ -1,0 +1,5 @@
+- Definicao
+https://www.baeldung.com/java-9-http-client
+
+- Query Params
+https://www.baeldung.com/java-httpclient-parameters

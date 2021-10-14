@@ -1,0 +1,5 @@
+- Rodar no Docker
+https://phoenixnap.com/kb/docker-redis
+
+- Definir password
+https://github.com/docker-library/redis/issues/176

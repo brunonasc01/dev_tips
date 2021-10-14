@@ -1,0 +1,8 @@
+- Instalar o Redis (no Docker)
+sudo docker run --name <name> -p [port_number]:6379 -d redis --requirepass <senha>
+
+- Entrar no cli (no shell)
+redis-cli
+
+- Autenticar acesso
+auth <senha>

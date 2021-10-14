@@ -1,4 +1,9 @@
+https://phoenixnap.com/kb/install-virtualbox-on-ubuntu
+
 https://support.genymotion.com/hc/en-us/articles/360012253558-How-to-get-Genymotion-Desktop-for-free-personal-use-edition-
 
 https://docs.genymotion.com/desktop/latest/01_Get_started.html
 
+https://support.genymotion.com/hc/en-us/articles/360002815177-How-to-uninstall-Genymotion-Desktop-completely-purge-
+
+https://stackoverflow.com/questions/25178980/uninstalling-genymotion-v2-2-2-on-ubuntu-v14-04

@@ -1,0 +1,8 @@
+- instalacao
+https://wiki.winehq.org/Ubuntu
+
+- instalacao msi
+https://askubuntu.com/questions/671277/is-it-possible-to-run-a-windows-msi-installer
+
+- remocao
+https://technowikis.com/39090/how-to-uninstall-wine-in-ubuntu-20-04
