@@ -1,0 +1,5 @@
+- listar versoes instaladas
+sudo update-java-alternatives --list
+
+- definir a jdk padrao
+sudo update-alternatives --config java

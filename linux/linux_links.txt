@@ -11,3 +11,8 @@ https://desenvolvo.wordpress.com/2013/08/27/configurando-datasource-no-jboss-wil
 https://medium.com/@antonioszeto/how-to-install-nvidia-driver-on-ubuntu-18-04-7b464bab43e6
 
 https://e-tinet.com/linux/comando-linux-dpkg/
+
+- FileSystem full
+https://askubuntu.com/questions/266825/what-do-i-do-when-my-root-filesystem-is-full
+https://support.hostway.com/hc/en-us/articles/360001972270-How-to-clean-log-files-in-Linux
+https://linuxize.com/post/remove-directory-linux/

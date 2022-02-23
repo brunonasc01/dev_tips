@@ -3,3 +3,6 @@ https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
 
 - boas praticas na escrita do Dockerfile
 https://docs.docker.com/articles/dockerfile_best-practices/
+
+- mudar diretorio do docker
+https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/
