@@ -1,0 +1,9 @@
+- rodar cqlsh
+https://docs.datastax.com/eol/en/security/6.0/security/secCqlshCredentials.html
+
+- ver os keyspaces
+describe keyspaces
+
+- criar keyspace
+CREATE KEYSPACE <keyspace-name> WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+

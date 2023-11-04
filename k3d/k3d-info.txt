@@ -1,0 +1,29 @@
+- criar um cluster local
+k3d cluster create <cluster-name>(opcional) (--no-lb para nao criar load balancer) (--servers <?> define o numero de servidores (master)) (--agents <?> define o numero de agentes (worker node)) (-p "80:30000@loadbalancer" define um port binding no container do cluster)
+
+- listar os cluster criados
+k3d cluster list
+
+- remover um cluster
+k3d cluster delete (nome, quando definido na criacao)
+
+- obter a versao dos recursos para definicao do manifesto
+kubectl api-resources
+
+- criar/atualizar um pod
+kubectl apply -f <caminho do manifesto .yaml>
+
+- ver detalhes do pod
+kubectl describe pod <nome-pod>
+
+- fazer port forwarding do pod
+kubectl por-forward pod/<nome-pod> <porta-local>:<porta-do-pod>
+
+- remover um pod
+kubectl delete pod <nome-pod>
+
+- remover uma configuracao (pod/replicaset)
+kubectl delete -f <caminho do manifesto .yaml>
+
+- desfazer a configuracao
+kubectl rollout undo deployment <nome deployment>

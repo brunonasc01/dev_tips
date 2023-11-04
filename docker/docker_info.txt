@@ -9,9 +9,9 @@ sudo apt-get remove docker docker-engine docker.io
 sudo apt install docker.io
 
 - corrigir erro "Got permission denied while trying to connect to the Docker daemon socket"
-execute sudo chmod 666 /var/run/docker.sock
+sudo chmod 666 /var/run/docker.sock
 - definitivo
-sudo setfacl --modify user:<username or id>:rw /var/run/docker.sock
+sudo usermod -aG docker $USER
 
 - baixar uma imagem
 docker pull <nome> (latest) ou docker pull <nome>:<versao> (versao especifica)

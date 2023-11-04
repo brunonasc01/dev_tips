@@ -60,3 +60,6 @@ git reset -- <nome do arquivo ou extensao>
 
 - checkout de uma tag
 git checkout tags/<nome-da-tag>
+
+- deletar uma branch local
+git branch -d <local-branch>

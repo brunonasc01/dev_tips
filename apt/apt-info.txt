@@ -1,0 +1,19 @@
+- Instalar versao arbitraria do package
+apt-get install <package-name>=<version>
+
+- Listar versoes do package
+apt list -a <package-name>
+
+- Remover package
+apt remove <package-name>
+
+- Listar packages instalados
+apt list --installed
+
+- Listar versoes disponiveis do package
+apt list -a <package-name>
+
+- Instalar por versao
+apt-get install <package name>=<version>
+
+
