@@ -3,3 +3,10 @@ sudo update-java-alternatives --list
 
 - definir a jdk padrao
 sudo update-alternatives --config java
+
+- define a variavel de ambiente JAVA_HOME
+sudo gedit /etc/profile
+adicione as linhas abaixo
+export JAVA_HOME="Your path to jdk folder"
+export PATH=$JAVA_HOME/bin:$PATH
+

@@ -1,0 +1,3 @@
+- Quando tudo estiver certo e ainda aparecer o erro "Error establishing a database connection" ao acessar a url do wordpress
+Verifique se os usuarios criados no mysql estao corretos. Como o volume nao é automaticamente recriado, pode existir usuarios diferentes dos definidos no docker-compose
+

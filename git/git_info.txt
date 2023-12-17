@@ -1,3 +1,8 @@
+- Gerar Personal Access Token no GitHub
+1. No seu perfil vá em Settings
+2. Depois selecione Developer settings (no final)
+3. Por fim selecione Personal access tokens e gere o token
+
 - Ver a URL do remote
 git remote -v
 

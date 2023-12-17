@@ -1,0 +1,11 @@
+- Infraestrutura
+https://www.hostinger.com.br/tutoriais/como-instalar-wordpress-no-docker-windows-macos-e-linux
+https://www.beekeeperstudio.io/blog/how-to-use-mariadb-with-docker
+https://dev.to/sarahcssiqueira/10-reasons-i-moved-from-xampp-to-docker-1j6l
+https://www.cyberciti.biz/faq/how-to-show-list-users-in-a-mysql-mariadb-database/
+
+- Info sobre o block editor
+https://wordpress.org/documentation/article/wordpress-block-editor/
+
+- Cursos do wordpress.org
+https://learn.wordpress.org/courses/

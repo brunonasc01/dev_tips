@@ -147,4 +147,6 @@ docker port <id-container> 80
 docker run -d -p <porta-do-container> <imagem> (quantas vezes precisar)
 docker run -d -p <porta-exposta>::<porta-do-container> <imagem> (com porta exposta arbitraria)
 
+- Verificar os volumes anexados a um container
+docker inspect --format="{{.Mounts}}" <container-id>
 
