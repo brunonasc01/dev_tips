@@ -9,3 +9,4 @@ https://wordpress.org/documentation/article/wordpress-block-editor/
 
 - Cursos do wordpress.org
 https://learn.wordpress.org/courses/
+https://www.youtube.com/watch?v=_9FeKcUgcPw

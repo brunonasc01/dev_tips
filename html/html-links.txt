@@ -1,0 +1,9 @@
+- Html Tutorial
+https://www.geeksforgeeks.org/html-course-building-header-of-the-website/
+
+- Header examples
+https://uxcel.com/blog/header-design-examples-best-practices
+
+- Footer examples
+https://forgeandsmith.com/blog/website-footer-best-practices-improve-ux/
+https://enlear.academy/29-footer-examples-for-website-671ed148b969

@@ -16,3 +16,7 @@ Archetype - modelos para projetos
 maven-archetype-quickstart
 maven-archetype-webapp
 
+- Criar modulos num projeto
+Inclua no pom.xml <packaging>pom</packaging>
+Utilize o comando abaixo na raiz para criar os modulos
+mvn archetype:generate -DgroupId=<group-id> -DartifactId=<artifact-id> 
