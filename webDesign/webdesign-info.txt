@@ -1,2 +1,7 @@
-- Google Fonts
-https://fonts.google.com/
+- Salvar arquivo como svg no inkscape
+Select object.
+Copy object (Ctrl-C).
+Create a new document (Ctrl-N).
+Paste object (Ctrl-V).
+Resize page to selection (Ctrl-Shift-R).
+Save (Ctrl-S), select the Optimized SVG format and customize the setting or leave as is and click OK.
