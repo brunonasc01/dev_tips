@@ -1,0 +1,51 @@
+- Instalacao
+Instalar flutter e android studio
+
+- Rodar a aplicacao
+flutter run
+
+- Verificar dependencias do projeto
+flutter doctor
+
+- Todo widget é uma classe .dart com o metodo build()
+
+- Inclua uma virgula no final de cada parentesis, para formatar o codigo de forma eficiente
+
+- Layout widgets sao invisiveis porem auxiliam na organizacao dos elementos na tela
+
+- No evento do botao, deve passar o nome(referencia) a funcao a ser executada, nao a sua execucao (com o parentesis ())
+
+- O metodo setState força o Flutter a renderizar a interface, porém apenas o widget relacionado é atualizado
+
+- Incluir o _ no inicio do nome da classe, torna a classe privada
+
+- É boa prática ter apenas 01 widget por arquivo
+
+- Lifting the state up (pesquisar)
+
+- Spread Operator (like Typescript) ...{Lista}
+
+- Passando uma funcao com parametros no evento.
+Defina uma funcao anonima () => <funcao>(<argumentos>)
+
+- Adicionar novas dependencias
+incluar o <package: <versao> no dependencies do pubspec.yaml
+execute flutter pub get
+
+- Quando o widget é um modal, ele precisa ser stateful para persistir os inputs do usuario
+
+- Gerar Lista de valores com tamanho pre-definido
+List.generate(size, function)
+
+- O parametro elevation atribui relevo ao widget, fazendo-o saltar da tela
+exemplo: Card(elevation: 6, ...)
+
+- No dart o getter e setter sao definidos na notacao abaixo. Pode usar a notacao inline function tb.
+GET <Tipo> get get<field-name> {}
+SET set set<field-name>(argumento) {}
+
+- Definir um widget com tamanho flexivel
+Utilize o widget Flexible
+
+- Para corrigir erro "Unable to find suitable Visual Studio toolchain. Please run `flutter doctor` for more details", quando só quer rodar no Chrome ou Android
+No VSC, no rodapé direito troque o windows-desktop pelo chrome ou emulador

@@ -1,0 +1,2 @@
+- Listar namespaces (CLI)
+oc project

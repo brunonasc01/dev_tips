@@ -1,0 +1,20 @@
+- Adicionar dependência pelo terminal
+mvn quarkus:add-extension -Dextension="<nome-extensao>
+
+- Adicionar HealthCheck
+incluir a dependencia quarkus-smallrye-health
+Opcional: Personalizar o @Liveness e @Readiness criando classes que implementam o HealthCheck
+
+- Circuit Breaker
+@CircuitBreaker(
+        requestVolumeThreshold = 4, //amostragem para verificacao do circuit breaker
+        failureRatio = 0.5, //porcenta de falha para abrir o circuito
+        delay = 5000, //atraso antes de tentar fechar o circuito novamente
+        successThreshold = 2 //numero de requisicoes com sucesso para considerar resolvido
+)
+
+- Gerar imagens da aplicação sem o Docker (Dockerless)
+incluir a dependencia quarkus-container-image-jib
+
+- Publicar a aplicação no Kubernetes
+incluir a dependencia quarkus-kubernetes

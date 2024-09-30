@@ -1,0 +1,2 @@
+- Acessar o Sandbox pelo terminal
+https://developers.redhat.com/blog/2021/04/21/access-your-developer-sandbox-for-red-hat-openshift-from-the-command-line#
