@@ -1,2 +1,51 @@
 - Listar namespaces (CLI)
 oc project
+
+- Naked Pod
+pod sem nenhum responsável por gerenciar o seu ciclo de vida
+
+- criar/atualizar um pod
+kubectl apply -f <caminho do manifesto>.yaml
+
+- listar os replica sets
+kubectl get replicasets|replicaset|rs
+
+- descrever um elemento
+kubectl describe <tipo> <nome>
+
+- listar o deployment
+kubectl get deployments|deployment|deploy
+
+- expor um deployment
+kubectl expose deployment <nome-deployment> --port=<porta> --type=LoadBalancer
+
+- listar o service
+kubectl get services|service|svc
+
+- cria uma rota pelo openShift
+oc expose svc(service) <nome-service>
+
+- listar as rotas
+kubectl get routes
+
+- alterar as replicas
+kubectl scale deployment <deployment> --replicas=<nro. replicas>
+
+- atualizar versao da imagem no deployment
+kubectl set image deployment/<nome-deployment> path/nome imagem>:<versao>
+
+- editar deployment manualmente
+kubectl edit deployment <deployment-name>
+
+- obter o status da atualizacao (rollout)
+kubectl rollout status deployment <deployment-name>
+
+- obter o historico da atualizacao (rollout)
+kubectl rollout history deployment <deployment-name>
+
+- voltar uma versao do replicaSet
+kubectl rollout undo deployment/<deployment-name> --to-revision=<revision>
+
+
+
+
