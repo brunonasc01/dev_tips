@@ -25,3 +25,9 @@ baixe a imagem: docker pull postgres
 crie o container: docker run --name <nome-containe> -e "POSTGRES_PASSWORD=<senha-padrao>" -p 5432:5432 -v <diretorio-local-para-armazenar-dados>:/var/lib/postgresql/data -d postgres
 exemplo:
 docker run --name postgres-dev -e "POSTGRES_PASSWORD=postgres" -p 5432:5432 -v /home/bruno/development/PostgreSQL:/var/lib/postgresql/data -d postgres
+
+- Restaurar backup pelo terminal
+pg_restore -h localhost -p <port> -U <admin> -d <database> -v <dump-file>
+
+- Instalar client do Postgres (apenas executaveis)
+sudo apt install postgresql-client-15

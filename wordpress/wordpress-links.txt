@@ -10,3 +10,6 @@ https://wordpress.org/documentation/article/wordpress-block-editor/
 - Cursos do wordpress.org
 https://learn.wordpress.org/courses/
 https://www.youtube.com/watch?v=_9FeKcUgcPw
+
+- Corrigir o http/https nos arquivos internos
+https://themify.me/blog/mass-replace-urls-https-wordpress-database

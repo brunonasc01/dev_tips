@@ -71,3 +71,12 @@ sudo apt-get install -y nodejs
 - Insalar o chrome pelo dpkg 
 sudo dpkg -i <path>/google-chrome-stable_current_amd64.deb
 sudo apt-get -f install
+
+- Executar um arquivo sh no bash
+sh <nome-do-script>.sh
+
+- Incluir uma variavel de ambiente no PATH
+sudo gedit /etc/profile
+export <variavel>=<caminho>
+export export PATH=$PATH:<variavel>/bin
+depois de fazer login a variavel estara presente no path

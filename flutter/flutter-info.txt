@@ -49,3 +49,21 @@ Utilize o widget Flexible
 
 - Para corrigir erro "Unable to find suitable Visual Studio toolchain. Please run `flutter doctor` for more details", quando só quer rodar no Chrome ou Android
 No VSC, no rodapé direito troque o windows-desktop pelo chrome ou emulador
+
+- instalar o melos (gerenciador de pacotes)
+dart pub global activate melos
+
+- baixar as dependencias pelo melos
+melos get
+
+- verificar versao instalada
+flutter --version
+
+- aplicar uma versao anterior
+flutter downgrade <version>
+
+- adicionar repostorio externo (privado)
+dart pub token add {url}
+
+- obter o caminho de instalacao do flutter
+flutter sdk-path
